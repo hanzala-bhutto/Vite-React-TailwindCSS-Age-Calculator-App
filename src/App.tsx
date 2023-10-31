@@ -5,7 +5,9 @@ function App() {
 
   return (
     <>
+    <main className='h-screen w-screen flex justify-center items-center bg-offWhite'>
       <AgeForm />
+    </main>
     </>
   )
 }

@@ -13,7 +13,11 @@ export default {
         'litGrey': 'hsl(0, 0%, 86%)',
         'smokeGrey':'hsl(0, 1%, 44%)',
         'offBlack':'hsl(0, 0%, 8%)'
-      }
+      },
+      borderRadius: {
+        '12xl': '6rem',
+        '24xl': '12rem',
+      },
     },
   },
   plugins: [],
