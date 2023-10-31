@@ -1,5 +1,6 @@
 {
-  "name": "newsletter-sign-up-with-success-message-main",
+  "name": "vite-react-ts-tailwind-template",
+  "homepage": "https://hanzala-bhutto.github.io/Vite-React-Tailwind-CSS-Template/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
