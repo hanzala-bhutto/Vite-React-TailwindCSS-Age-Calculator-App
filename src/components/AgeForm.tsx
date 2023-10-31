@@ -28,7 +28,7 @@ const AgeForm =  () => {
 
         const {name, value} = target;
         const valueInt = parseInt(value);
-        console.log(name, value);
+        // console.log(name, value);
         if (name=='day'){
             if (valueInt<1 || valueInt>31){
                 setError({...error, day: true});
@@ -59,15 +59,15 @@ const AgeForm =  () => {
     }
 
     const handleSubmit = () => {
-        console.log(day,month,year);
-        console.log(formError);
+        // console.log(day,month,year);
+        // console.log(formError);
         if (day=='' || month=='' || year==''){
             setFormError({...formError, day: day == '', month: month == '', year: year == ''});
             // day == ''? setFormError({...formError, day: true}): setFormError({...formError, day: false});
             // month == ''?setFormError({...formError, month: true}): setFormError({...formError, month: false});
             // year == ''?setFormError({...formError, year: true}): setFormError({...formError, year: false});
 
-            console.log(formError);
+            // console.log(formError);
             return;
         }
         else{
@@ -84,7 +84,7 @@ const AgeForm =  () => {
                 const months = diff.months();
                 const days = diff.days();
                 setAge({years, months, days});
-                console.log(years,months,days);
+                // console.log(years,months,days);
             }
         }
 
@@ -121,7 +121,7 @@ const AgeForm =  () => {
                 </form>
                 <div className="flex flex-col items-center md:flex-row md:items-center md:justify-end">
                     <div className="flex-1 border-b-2 border-solid border-litGray"></div>
-                    <img onClick={handleSubmit} className="bg-purple rounded-full p-4 md:p-6 self-center before:border-b-2 mt-2 md:mt-0" src="./images/icon-arrow.svg" alt="arrow" />
+                    <img onClick={handleSubmit} className="bg-purple rounded-full p-4 md:p-6 self-center cursor-pointer before:border-b-2 mt-2 md:mt-0" src="./images/icon-arrow.svg" alt="arrow" />
                 </div>
                 <div className=" italic">
                     <p className="text-6xl md:text-7xl font-bold text-offBlack"><span className="text-6xl md:text-7xl font-bold text-purple">{age.years?age.years:'--'}</span> years</p>
